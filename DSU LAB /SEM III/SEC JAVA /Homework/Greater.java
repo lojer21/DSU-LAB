@@ -1,5 +1,5 @@
 // 20-08-2025
-// 1. Take two numbers as input from the user and print the greater one.
+// Take two numbers as input from the user and print the greater one.
 import java.util.*;
 class Greater
 {
