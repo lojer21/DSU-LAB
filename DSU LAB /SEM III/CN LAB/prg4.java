@@ -8,10 +8,11 @@ class prg4
     int n=graph.length;
     int[][]dist=new int[n][n];
     //Initialize distance vector with graph itself
-    for(int i=0;i<n;i++)
-    dist[i]=Arrays.copyOf(graph[i],n);
+    for(int i=0;i<n;i++){
+    dist[i]=Arrays.copyOf(graph[i],n);}
     //Update distance vectorusing neighbors
-    for(int k=0;k<n;k++)//k is the intermediate node
+    for(int k=0;k<n;k++)
+    //k is the intermediate node
     {
         for(int i=0;i<n;i++)
         {
@@ -27,6 +28,7 @@ class prg4
     {
         System.out.println("Router "+i+" distance vector:"+Arrays.toString(dist[i]));
     }
+}
 public static void main(String[] aya)
 {
     int[][]graph={
@@ -36,4 +38,5 @@ public static void main(String[] aya)
         {INF,7,2,0}
     };
     distanceVector(graph);
+}
 }
