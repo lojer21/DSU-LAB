@@ -29,7 +29,7 @@ else{
 
 printf("stack elements are: ");
 for(int i=top;i>=0;i--){
-printf("%d",stack[i]);
+printf("%d   ",stack[i]);
 }
 printf("\n");
 }
